@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Remove the scroll bar */
+        }
+
+        #navbar {
+            background-color: transparent;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 50%;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            padding: 10px 20px;
+        }
+
+        #navbar h1 {
+            margin: 0;
+            color: #1F4172;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #navbar li {
+            margin: 0 20px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: #444;
+        }
+
+        #navbar ul li:first-child a {
+            color: black;
+        }
+
+        #landing-container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        #content-container {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content-container h2 {
+            color: #1F4172;
+        }
+
+        #content-container p {
+            color: #666;
+        }
+
+        #buttons-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #64CCC5;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button.transparent {
+            background-color: transparent;
+            border: 2px solid black;
+        }
+
+        /* Add hover effect */
+        .button:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        #image-container {
+            flex: 1;
+            height: 100%;
+            width: 50%;
+            background-image: url('https://images8.alphacoders.com/132/1328631.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+
+        @media (max-width: 768px) {
+            #landing-container {
+                flex-direction: column;
+            }
+
+            #image-container {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <h1>Startup 3</h1>
+        <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div id="landing-container">
+        <div id="content-container">
+            <h2>Great Tool to Boost Your Startup</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis justo in odio vestibulum laoreet.</p>
+            <div id="buttons-container">
+                <a href="#" class="button">Get Started</a>
+                <a href="#" class="button transparent">Learn More</a>
+            </div>
+        </div>
+        <div id="image-container"></div>
+    </div>
+</body>
+</html>
